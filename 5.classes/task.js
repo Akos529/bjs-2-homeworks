@@ -11,20 +11,19 @@ class PrintEditionItem{
         this.state *= 1.5;
     }
 
-    set state(newState){
-        if (newState < 0){
-            this.state = 0;
-        }
-        if (newState > 100){
-            this.state = 100;
-        }else{
-        this.state = newState;
-        }
-    }
+    // set state(newState){
+    //     if (newState < 0){
+    //         this.state = 0;
+    //     }
+    //     if (newState > 100){
+    //         this.state = 100;
+    //     }
+    //     this.state = newState;
+    // }
 
-    get state(){
-        return this.state;
-    }
+    // get state(){
+    //     return this.state;
+    // }
    
 }
 class Magazine extends PrintEditionItem{
